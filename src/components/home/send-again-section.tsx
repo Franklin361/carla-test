@@ -13,7 +13,7 @@ function SendAgainSection({usersToSendAgain}: Props) {
     <section>
       <div className="space-y-4 rounded-2xl bg-white py-5 shadow-lg shadow-black/5">
         <header className="flex items-center justify-between px-5">
-          <h6 className="text-lg font-semibold leading-tight">Send again</h6>
+          <h6 className="text-lg font-medium leading-tight">Send again</h6>
           <button
             className="relative flex items-center justify-center gap-1 rounded-full bg-gray-200 p-1 px-2 transition-all hover:bg-gray-300 active:bg-gray-300/50"
             type="button"

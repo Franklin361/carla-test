@@ -124,7 +124,7 @@ const userInfo: UserInfo = {
 
 export default function HomePage() {
   return (
-    <div className="relative mx-auto max-w-[485px] border border-white bg-[#f0f1f3] p-5">
+    <div className="relative mx-auto max-w-[485px] border border-white bg-[#e4e4e4] p-5">
       <OverlayPattern />
 
       <TopBarActions />

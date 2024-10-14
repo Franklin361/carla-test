@@ -24,7 +24,7 @@ function BalanceHeader({name, amount, amountOnHold}: Props) {
       <span className="my-4 inline-block text-5xl font-semibold">{formatCurrency(amount)}</span>
 
       <div className="mx-auto w-fit rounded-full bg-gray-400/20 px-4 py-2 text-black/50">
-        Money hold <span className="text-black">{formatCurrency(amountOnHold)}</span>{" "}
+        Money hold <span className="font-medium text-black">{formatCurrency(amountOnHold)}</span>{" "}
       </div>
       <div className="mt-8 flex items-center justify-center gap-2">
         <button
