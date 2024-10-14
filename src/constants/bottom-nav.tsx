@@ -16,11 +16,11 @@ export const bottomNavbar = [
     icon: Activity,
   },
   {
-    to: "/",
+    to: "/choose-card",
     icon: SquareSplitVertical,
   },
   {
-    to: "/",
+    to: "/send-money",
     icon: CircleDollarSign,
   },
   {
