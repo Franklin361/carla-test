@@ -1,7 +1,6 @@
 import {Plus} from "lucide-react";
 
-import {icon} from "@/constants/icon";
-import {cn} from "@/lib/utils";
+import SendAgainList from "@/components/home/send-again-list";
 import {UserInfoDetails} from "@/types";
 
 interface Props {
@@ -22,27 +21,8 @@ function SendAgainSection({usersToSendAgain}: Props) {
             Add
           </button>
         </header>
-        <div className="hidden-scroll flex h-fit snap-x snap-mandatory gap-5 overflow-x-auto">
-          {usersToSendAgain.map(({id, name, platform, userImage}) => (
-            <div key={id} className="flex-none snap-start space-y-1 text-center first:pl-5">
-              <figure className="relative">
-                <img alt={name} className="size-[69px] rounded-full" src={userImage} />
-                <div
-                  className={cn(
-                    "absolute -bottom-0 -right-2 rounded-full border-2 border-white bg-white p-1",
-                    icon[platform].backgroundColor,
-                  )}
-                >
-                  <img alt={platform} className="size-5 object-contain" src={icon[platform].src} />
-                </div>
-              </figure>
 
-              <span className="mb-0 inline-block max-w-[69px] truncate p-0 text-sm leading-none">
-                {name}
-              </span>
-            </div>
-          ))}
-        </div>
+        <SendAgainList userList={usersToSendAgain} />
       </div>
     </section>
   );
