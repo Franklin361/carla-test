@@ -1,8 +1,10 @@
 import {CircleHelp, Gift} from "lucide-react";
 
+import TopBarLayout from "@/components/shared/top-bar-layout";
+
 function TopBarActions() {
   return (
-    <div className="relative z-20 flex items-center justify-between py-5">
+    <TopBarLayout>
       <span className="text-3xl font-semibold">Pesse</span>
       <div className="flex items-center gap-5">
         <button
@@ -19,7 +21,7 @@ function TopBarActions() {
           <Gift className="size-5" /> Rewards
         </button>
       </div>
-    </div>
+    </TopBarLayout>
   );
 }
 

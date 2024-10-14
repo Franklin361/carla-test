@@ -19,3 +19,14 @@ export interface UserInfoDetails {
 }
 
 export type Platform = "paypal" | "bca" | "stripe";
+
+export interface CardInfo {
+  id: string;
+  name: string;
+  primaryColor: string;
+  secondaryColor: string;
+  logoShadowColorClass: string;
+  amount: number;
+  isMainCard: boolean;
+  lastFourNumbers: string;
+}
