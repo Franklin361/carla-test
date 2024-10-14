@@ -16,6 +16,7 @@ export interface UserInfoDetails {
   name: string;
   platform: Platform;
   userImage: string;
+  cardNumber: string;
 }
 
 export type Platform = "paypal" | "bca" | "stripe";
