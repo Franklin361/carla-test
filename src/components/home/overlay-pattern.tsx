@@ -1,8 +1,8 @@
 function OverlayPattern() {
   return (
     <div className="absolute left-0 top-0 z-10 h-[55dvh] w-full">
-      <div className="absolute z-10 h-36 w-full bg-gradient-to-t from-transparent to-[#f0f1f3]" />
-      <div className="absolute bottom-0 z-10 h-36 w-full bg-gradient-to-t from-[#f0f1f3] to-transparent" />
+      <div className="absolute z-10 h-36 w-full bg-gradient-to-t from-transparent to-[#e4e4e4]" />
+      <div className="absolute bottom-0 z-10 h-36 w-full bg-gradient-to-t from-[#e4e4e4] to-transparent" />
       <svg className="h-full w-full opacity-20" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern
