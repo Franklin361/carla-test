@@ -6,7 +6,7 @@ interface Props extends HTMLAttributes<HTMLDivElement>, React.PropsWithChildren 
 
 function FixedBottomLayout({className, children}: Props) {
   return (
-    <div className={cn("fixed bottom-5 left-1/2 w-fit -translate-x-1/2", className)}>
+    <div className={cn("fixed bottom-5 left-1/2 z-50 w-fit -translate-x-1/2", className)}>
       {children}
     </div>
   );
