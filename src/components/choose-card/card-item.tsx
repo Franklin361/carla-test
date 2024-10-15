@@ -42,7 +42,7 @@ function CardItem({card}: Props) {
           </span>
         </div>
       )}
-      <div className="absolute bottom-0 left-4 z-0">
+      <div className="pointer-events-none absolute bottom-0 left-4 z-0 select-none">
         <span
           className={cn("text-[clamp(120px,20vw,140px)] font-bold leading-none", "isometric-text")}
           style={{"--text-color": card.primaryColor} as React.CSSProperties}
