@@ -14,7 +14,7 @@ function TransactionHistorySection({historyTransaction}: Props) {
           <h6 className="text-base font-medium sm:text-lg">History transaction</h6>
           <button
             className={cn(
-              "text-sm text-primary/60 transition-all",
+              "text-primary/60 transition-all",
               "hover:text-primary",
               "active:text-primary/80",
             )}

@@ -11,40 +11,23 @@ interface Props {
 
 function HistoryItem({history}: Props) {
   return (
-    <div className="flex snap-start items-center gap-x-5">
+    <div className="flex snap-start items-center gap-x-4">
       <Avatar name={history.name} platform={history.platform} userImage={history.userImage} />
 
-      <div className="flex flex-1 flex-col gap-1">
-        <span
-          className={cn(
-            "max-w-fit truncate text-sm font-medium",
-            "md:max-w-[200px]",
-            "sm:text-base",
-          )}
-        >
-          {history.name}
+      <div className="flex flex-1 flex-col gap-0">
+        <span className={cn("max-w-[160px] truncate font-medium", "md:max-w-[200px]")}>
+          {history.name} Lorem ipsum dolor sit amet.
         </span>
-        <p className={cn("flex flex-wrap items-center gap-0 text-xs", "sm:text-sm")}>
+        <p className="flex flex-wrap items-center gap-0">
           <span>{formatDate(history.dateOperation)}</span>
           <Dot className="size-3" />
           <span>{formatTime(history.dateOperation)}</span>
         </p>
-        <div>
-          <span
-            className={cn(
-              "block text-end font-semibold",
-              history.value < 0 ? "text-destructive" : "text-accent-foreground",
-              "md:hidden",
-            )}
-          >
-            {formatCurrency(history.value)}
-          </span>
-        </div>
       </div>
 
       <span
         className={cn(
-          "hidden-scroll hidden w-1/4 overflow-x-auto text-end text-lg font-semibold md:block",
+          "hidden-scroll flex-1 overflow-x-auto text-end text-lg font-semibold",
           history.value < 0 ? "text-destructive" : "text-accent-foreground",
         )}
       >

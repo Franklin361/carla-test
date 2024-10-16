@@ -11,12 +11,7 @@ function SendAgainItem({user}: Props) {
     <div className={cn("flex-none snap-start space-y-1 text-center", "first:pl-5")}>
       <Avatar name={user.name} platform={user.platform} userImage={user.userImage} />
 
-      <span
-        className={cn(
-          "mb-0 inline-block max-w-[69px] truncate p-0 text-xs leading-none",
-          "sm:text-sm",
-        )}
-      >
+      <span className={cn("mb-0 inline-block max-w-[69px] truncate p-0 text-sm leading-none")}>
         {user.name}
       </span>
     </div>
