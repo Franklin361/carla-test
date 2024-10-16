@@ -26,6 +26,9 @@
   html {
     @apply bg-background text-primary;
   }
+  .o {
+    @apply outline outline-1;
+  }
 }
 
 

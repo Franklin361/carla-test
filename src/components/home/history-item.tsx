@@ -11,28 +11,30 @@ interface Props {
 
 function HistoryItem({history}: Props) {
   return (
-    <div className="flex snap-start items-center gap-x-4">
+    <div className={cn("flex items-center gap-3")}>
       <Avatar name={history.name} platform={history.platform} userImage={history.userImage} />
 
-      <div className="flex flex-1 flex-col gap-0">
-        <span className={cn("max-w-[160px] truncate font-medium", "md:max-w-[200px]")}>
-          {history.name} Lorem ipsum dolor sit amet.
-        </span>
-        <p className="flex flex-wrap items-center gap-0">
-          <span>{formatDate(history.dateOperation)}</span>
-          <Dot className="size-3" />
-          <span>{formatTime(history.dateOperation)}</span>
-        </p>
-      </div>
+      <div className="grid flex-1 grid-cols-[1fr,auto] items-center gap-3 overflow-x-auto">
+        <div className="">
+          <span className={cn("font-medium")}>{history.name}</span>
 
-      <span
-        className={cn(
-          "hidden-scroll flex-1 overflow-x-auto text-end text-lg font-semibold",
-          history.value < 0 ? "text-destructive" : "text-accent-foreground",
-        )}
-      >
-        {formatCurrency(history.value)}
-      </span>
+          <div className="flex w-fit flex-wrap">
+            <span className="flex w-fit flex-nowrap items-center text-nowrap">
+              {formatDate(history.dateOperation)} <Dot className="float-end size-5 w-fit" />
+            </span>
+            <span className="block w-fit">{formatTime(history.dateOperation)}</span>
+          </div>
+        </div>
+
+        <span
+          className={cn(
+            history.value < 0 ? "text-destructive" : "text-accent-foreground",
+            "text-center font-medium",
+          )}
+        >
+          {formatCurrency(history.value)}
+        </span>
+      </div>
     </div>
   );
 }
