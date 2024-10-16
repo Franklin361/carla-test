@@ -7,7 +7,7 @@ import {bottomNavbar} from "@/constants/bottom-nav";
 function FixedBottomNav() {
   return (
     <FixedBottomLayout className="w-[300px]">
-      <nav className="flex w-full items-center justify-between gap-4 rounded-full bg-black p-5 px-6 text-white shadow-xl shadow-black/30">
+      <nav className="flex w-full items-center justify-between gap-4 rounded-full border border-border bg-primary p-5 px-6 text-secondary shadow-xl shadow-black/30">
         {bottomNavbar.map(({icon: Icon, to}, i) => (
           <Link
             key={`${to + i}`}

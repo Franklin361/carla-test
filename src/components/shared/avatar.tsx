@@ -7,14 +7,14 @@ type Props = Omit<UserInfoDetails, "id" | "cardNumber">;
 function Avatar({userImage, name, platform}: Props) {
   return (
     <figure className="relative flex-none">
-      <img alt={name} className="size-[69px] rounded-full" src={userImage} />
+      <img alt={name} className="size-[55px] rounded-full sm:size-[69px]" src={userImage} />
       <div
         className={cn(
-          "absolute -bottom-0 -right-2 rounded-full border-2 border-white bg-white p-1",
+          "border-secondary bg-secondary absolute -bottom-0 -right-1 rounded-full border-2 p-1 sm:-right-2",
           icon[platform].backgroundColor,
         )}
       >
-        <img alt={platform} className="size-5 object-contain" src={icon[platform].src} />
+        <img alt={platform} className="size-4 object-contain sm:size-5" src={icon[platform].src} />
       </div>
     </figure>
   );

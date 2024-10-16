@@ -8,7 +8,7 @@ function ChooseCardPage() {
     <>
       <TopBarActions />
 
-      <main className="my-2">
+      <main className="my-2 mb-20">
         <CardList cards={cards} />
       </main>
 

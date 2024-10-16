@@ -1,9 +1,9 @@
 function PromoBanner() {
   return (
     <section>
-      <div className="relative z-20 grid grid-cols-[1fr,auto] gap-5 rounded-2xl bg-black p-5 text-white/70">
+      <div className="relative z-20 grid grid-cols-[1fr,auto] gap-5 rounded-2xl bg-primary p-5 text-secondary/70">
         <div className="space-y-1">
-          <h2 className="text-lg font-medium leading-tight text-white">
+          <h2 className="text-lg font-medium leading-tight text-secondary">
             Start sending money tax free
           </h2>
           <p className="text-pretty text-sm leading-relaxed">

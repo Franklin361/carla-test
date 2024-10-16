@@ -6,6 +6,7 @@ import AccountCardInfo from "@/components/send-money/account-card-info";
 import CurrencyDisplay from "@/components/send-money/currency-display";
 import Keypad from "@/components/send-money/keypad";
 import {UserInfo} from "@/types";
+import {cn} from "@/lib/utils";
 
 interface Props {
   userAccountOwner: UserInfo;
@@ -53,7 +54,11 @@ function MoneyTransferPanel({userAccountOwner}: Props) {
       />
 
       <button
-        className="w-full gap-2 rounded-full bg-black p-4 text-center text-white shadow-xl shadow-black/30 transition-all hover:bg-black active:bg-black/70"
+        className={cn(
+          "w-full gap-2 rounded-full bg-primary p-4 text-center text-secondary shadow-xl shadow-black/10 transition-all",
+          "hover:shadow-lg hover:shadow-black/20",
+          "active:bg-primary/80 active:shadow-lg active:shadow-black/10",
+        )}
         type="button"
       >
         Send money

@@ -2,6 +2,7 @@ import {Plus} from "lucide-react";
 
 import SendAgainList from "@/components/home/send-again-list";
 import {UserInfoDetails} from "@/types";
+import {cn} from "@/lib/utils";
 
 interface Props {
   usersToSendAgain: UserInfoDetails[];
@@ -10,11 +11,15 @@ interface Props {
 function SendAgainSection({usersToSendAgain}: Props) {
   return (
     <section>
-      <div className="space-y-4 rounded-2xl bg-white py-5 shadow-lg shadow-black/5">
+      <div className="space-y-4 rounded-2xl bg-secondary py-5 shadow-lg shadow-black/5">
         <header className="flex items-center justify-between px-5">
-          <h6 className="text-lg font-medium leading-tight">Send again</h6>
+          <h6 className={cn("text-base font-medium leading-tight", "sm:text-lg")}>Send again</h6>
           <button
-            className="relative flex items-center justify-center gap-1 rounded-full bg-gray-200 p-1 px-2 transition-all hover:bg-gray-300 active:bg-gray-300/50"
+            className={cn(
+              "relative flex items-center justify-center gap-1 rounded-full border border-transparent bg-background/30 p-1 px-2 transition-all",
+              "hover:bg-background/50",
+              "active:bg-background/70",
+            )}
             type="button"
           >
             <Plus className="size-4" />

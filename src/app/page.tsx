@@ -20,7 +20,7 @@ export default function HomePage() {
         name={userInfo.name}
       />
 
-      <main className="mt-5 space-y-5">
+      <main className="mb-20 mt-5 space-y-5">
         <PromoBanner />
 
         <SendAgainSection usersToSendAgain={userInfo.usersToSendAgain} />

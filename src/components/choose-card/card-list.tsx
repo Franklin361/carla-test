@@ -8,7 +8,7 @@ interface Props {
 
 function CardList({cards}: Props) {
   return (
-    <section className="mb-20 space-y-4">
+    <section className="space-y-4">
       {cards.map((card) => (
         <CardItem key={card.id} card={card} />
       ))}

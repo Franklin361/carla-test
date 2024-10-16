@@ -12,7 +12,7 @@ interface Props {
 
 function Keypad({currentValue, maxNumberLength, ...action}: Props) {
   return (
-    <div className="grid grid-cols-3 gap-2 rounded-lg bg-white p-4 text-lg">
+    <div className="grid grid-cols-3 gap-2 rounded-lg bg-secondary p-4 text-lg">
       {generateArrayNumbers(9).map((i) => (
         <KeyButton
           key={`btn-${i}`}
