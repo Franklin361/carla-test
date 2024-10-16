@@ -1,4 +1,3 @@
-https://dribbble.com/shots/23246429-Pesse-Fintech-Mobile-App## carla-test
 # Prueba para la empresa Carla.
 
 ### 📝 UI a construir.
@@ -12,7 +11,7 @@ https://dribbble.com/shots/23246429-Pesse-Fintech-Mobile-App## carla-test
 
 ### Estructura de la app.
 
-Como se menciono, la app esta estructurada en paginas, las  cuales son las siguientes.
+Como se mencionó, la app esta estructurada en paginas, las  cuales son las siguientes.
 
 - [Home -> '/'](https://carla-test.vercel.app/)
 - [Choose Card -> '/choose-card'](https://carla-test.vercel.app/choose-card)
